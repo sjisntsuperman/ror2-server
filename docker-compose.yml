@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    rsshub:
+        image: avivace/ror2server
+        # restart: always
+        ports:
+            - '25000:25000/udp'
+        environment:
+            R2_SV_PORT: 25000
+            R2_PSW: hello
